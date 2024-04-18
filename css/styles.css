@@ -386,6 +386,9 @@ body main .registro .registro-grilla .registro-formulario div p {
   font-family: Montserrat;
   opacity: 0.6;
 }
+body main .registro .registro-grilla .registro-formulario div textarea {
+  resize: none;
+}
 body main .registro .registro-grilla .formulario-boton {
   text-align: center;
   margin-top: 20px;
