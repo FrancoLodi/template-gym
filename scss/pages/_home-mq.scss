@@ -1,51 +1,127 @@
 // Media query
 
 /*Media query tablet*/
-@media screen and (min-width:720px){
+@media screen and (min-width:600px){
     body{
         main{
+            .carousel-edit{
+                div{
+                    .texto-banner{
+                        top: 150px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:720px){
+    body{
+        header{
+            .pre-header{
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 12px;
+                padding-right: 12px;
+                padding-left: 12px;
+                height: 30px;
+                .pre-header-redes{
+                    margin-top: -18px;
+                }
+            }
+        }
+        main{
             justify-content: center;
+            .carousel-edit{
+                div{
+                    .texto-banner{
+                        left: 50px;
+                        .texto-banner-titulo{
+                            font-size: 32px;
+                        }
+                        .texto-banner-descripcion{
+                            font-size: 15px;
+                        }
+                        .texto-banner-boton{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .stories{
+                .stories-grilla{
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                    margin: 60px 40px;
+                    .stories-grilla-imagen{
+                        img{
+                            width: 90%;
+                        }
+                    }
+                    .stories-grilla-texto{
+                        max-width: 400px;
+                        margin-top: -20px;
+                        .stories-texto-descripcion{
+                            max-width: 400px;
+                        }
+                        .stories-texto-boton{
+                            button{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
             .clases{
                 display: grid;
-                grid-template-columns: 600px auto;
+                grid-template-columns: 400px auto;
                 .clases-tipos{
                     display: grid;
                     grid-template-columns: auto auto;
+                    div{
+                        .clase-titulo{
+                            font-size: 14px;
+                        }
+                        .clase-texto{
+                            font-size: 12px;
+                            max-width: 200px;
+                        }
+                    }
                 }
             }
             .coaches{
                 .coaches-grilla{
-                    grid-template-columns: auto auto auto;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    gap: 15px;
                 }
             }
             .memberships{
                 .memberships-grilla{
-                    grid-template-columns: auto auto auto;
-                    gap: 80px;
-                }
-            }
-
-            .banda{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .descripcion-banda{
-                    max-width: 720px;
-                }
-            }
-            .band-mates{
-                display: flex;
-                width: 700px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .contacto{
-                .caja-contacto{
-                    margin-top: 20px;
                     display: flex;
-                    gap: 10px;
+                    justify-content: space-around;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    gap: 6px;
                 }
+            }
+            .registro{
+                .registro-grilla{
+                    .registro-formulario{
+                        grid-template-columns: auto auto;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+        footer{
+            .footer-info-contacto{
+                display: flex;
+                justify-content: space-around;
             }
         }
     }
@@ -55,33 +131,7 @@
 @media screen and (min-width:1024px){
     body{
         main{
-            .banda{
-                .descripcion-banda{
-                    max-width: 800px;
-                }
-            }
-            .band-mates{
-                width: 800px;
-            }
-            .tour{
-                .bloque-tour{
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    gap: 70px;
-                    align-items: center;
-                    margin-top: 40px;
-                    .second-card{
-                        margin-top: 0;
-                    }
-                }
-            }
-            .contacto{
-                .caja-contacto{
-                    margin-top: 40px;
-                    gap: 170px;
-                    padding-bottom: 30px;
-                }
-            }
+            
         }
     }
 }

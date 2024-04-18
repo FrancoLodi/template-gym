@@ -111,6 +111,7 @@ body main {
   /*Coaches*/
   /*MEMBERSHIPS*/
   /*REGISTRO*/
+  /*Imagen footer*/
 }
 body main .carousel-edit div {
   position: relative;
@@ -355,7 +356,7 @@ body main .memberships .memberships-grilla .memberships-tarjeta .memberships-tar
   transition: all 0.25s ease-in-out;
 }
 body main .registro {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 body main .registro .registro-grilla {
   border: none;
@@ -385,10 +386,11 @@ body main .registro .registro-grilla .registro-formulario div p {
   font-family: Montserrat;
   opacity: 0.6;
 }
-body main .registro .registro-grilla .registro-formulario .formulario-boton {
+body main .registro .registro-grilla .formulario-boton {
   text-align: center;
+  margin-top: 20px;
 }
-body main .registro .registro-grilla .registro-formulario .formulario-boton button {
+body main .registro .registro-grilla .formulario-boton button {
   font-size: 22px;
   font-family: montserrat;
   font-weight: 700;
@@ -398,14 +400,7 @@ body main .registro .registro-grilla .registro-formulario .formulario-boton butt
   color: whitesmoke;
   margin-top: 12px;
 }
-body main .registro .registro-imagen {
-  display: flex;
-  justify-content: center;
-  margin-left: 22px;
-  margin-right: 22px;
-  margin-top: -36px;
-}
-body main .registro .registro-imagen img {
+body main .imagen-footer img {
   width: 100%;
 }
 body footer {
@@ -430,43 +425,33 @@ body footer .footer-info-contacto .footer-info-contacto-texto p {
   font-size: 16px;
   color: white;
 }
-body footer .logos-link {
-  padding: 60px;
+body footer .footer-redes {
   display: flex;
-  gap: 14px;
-  opacity: 0.7;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
-body footer .logos-link a {
-  align-items: center;
+body footer .footer-redes a img {
+  height: 18px;
 }
-body footer .logos-link a .logo-ig {
-  width: 20px;
-  height: 20px;
+body footer .footer-redes a .img-logo-x {
+  margin-left: -6px;
+  margin-right: -6px;
 }
-body footer .logos-link a .logo-yt {
-  margin-top: 1px;
-  width: 25px;
-}
-body footer .logos-link a .logo-tiktok {
-  width: 18px;
-}
-body footer .logos-link a .logo-sound {
-  height: 42px;
-  width: 42px;
-  margin-left: -9px;
-}
-body footer .logos-link a .logo-band {
-  height: 42px;
-  width: 42px;
-  margin-left: -8px;
+body footer .footer-redes a .img-logo-yt {
+  height: 21px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 body footer .firma {
   text-align: center;
-  padding-bottom: 30px;
   font-size: 12px;
   color: white;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 body footer .firma a {
   text-decoration: none;
@@ -480,69 +465,95 @@ body footer .firma a .firma-nombre:hover {
 }
 
 /*Media query tablet*/
+@media screen and (min-width: 600px) {
+  body main .carousel-edit div .texto-banner {
+    top: 150px;
+  }
+}
 @media screen and (min-width: 720px) {
+  body header .pre-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    height: 30px;
+  }
+  body header .pre-header .pre-header-redes {
+    margin-top: -18px;
+  }
   body main {
     justify-content: center;
   }
+  body main .carousel-edit div .texto-banner {
+    left: 50px;
+  }
+  body main .carousel-edit div .texto-banner .texto-banner-titulo {
+    font-size: 32px;
+  }
+  body main .carousel-edit div .texto-banner .texto-banner-descripcion {
+    font-size: 15px;
+  }
+  body main .carousel-edit div .texto-banner .texto-banner-boton {
+    font-size: 18px;
+  }
+  body main .stories .stories-grilla {
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin: 60px 40px;
+  }
+  body main .stories .stories-grilla .stories-grilla-imagen img {
+    width: 90%;
+  }
+  body main .stories .stories-grilla .stories-grilla-texto {
+    max-width: 400px;
+    margin-top: -20px;
+  }
+  body main .stories .stories-grilla .stories-grilla-texto .stories-texto-descripcion {
+    max-width: 400px;
+  }
+  body main .stories .stories-grilla .stories-grilla-texto .stories-texto-boton button {
+    font-size: 16px;
+  }
   body main .clases {
     display: grid;
-    grid-template-columns: 600px auto;
+    grid-template-columns: 400px auto;
   }
   body main .clases .clases-tipos {
     display: grid;
     grid-template-columns: auto auto;
   }
+  body main .clases .clases-tipos div .clase-titulo {
+    font-size: 14px;
+  }
+  body main .clases .clases-tipos div .clase-texto {
+    font-size: 12px;
+    max-width: 200px;
+  }
   body main .coaches .coaches-grilla {
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 15px;
   }
   body main .memberships .memberships-grilla {
-    grid-template-columns: auto auto auto;
-    gap: 80px;
-  }
-  body main .banda {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 6px;
   }
-  body main .banda .descripcion-banda {
-    max-width: 720px;
+  body main .registro .registro-grilla .registro-formulario {
+    grid-template-columns: auto auto;
+    gap: 20px;
   }
-  body main .band-mates {
+  body footer .footer-info-contacto {
     display: flex;
-    width: 700px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  body main .contacto .caja-contacto {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
+    justify-content: space-around;
   }
 }
 /*Media query desktop*/
-@media screen and (min-width: 1024px) {
-  body main .banda .descripcion-banda {
-    max-width: 800px;
-  }
-  body main .band-mates {
-    width: 800px;
-  }
-  body main .tour .bloque-tour {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 70px;
-    align-items: center;
-    margin-top: 40px;
-  }
-  body main .tour .bloque-tour .second-card {
-    margin-top: 0;
-  }
-  body main .contacto .caja-contacto {
-    margin-top: 40px;
-    gap: 170px;
-    padding-bottom: 30px;
-  }
-}
 
 /*# sourceMappingURL=styles.css.map */
