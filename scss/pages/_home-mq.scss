@@ -1,0 +1,87 @@
+// Media query
+
+/*Media query tablet*/
+@media screen and (min-width:720px){
+    body{
+        main{
+            justify-content: center;
+            .clases{
+                display: grid;
+                grid-template-columns: 600px auto;
+                .clases-tipos{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                }
+            }
+            .coaches{
+                .coaches-grilla{
+                    grid-template-columns: auto auto auto;
+                }
+            }
+            .memberships{
+                .memberships-grilla{
+                    grid-template-columns: auto auto auto;
+                    gap: 80px;
+                }
+            }
+
+            .banda{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .descripcion-banda{
+                    max-width: 720px;
+                }
+            }
+            .band-mates{
+                display: flex;
+                width: 700px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .contacto{
+                .caja-contacto{
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+/*Media query desktop*/
+@media screen and (min-width:1024px){
+    body{
+        main{
+            .banda{
+                .descripcion-banda{
+                    max-width: 800px;
+                }
+            }
+            .band-mates{
+                width: 800px;
+            }
+            .tour{
+                .bloque-tour{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 70px;
+                    align-items: center;
+                    margin-top: 40px;
+                    .second-card{
+                        margin-top: 0;
+                    }
+                }
+            }
+            .contacto{
+                .caja-contacto{
+                    margin-top: 40px;
+                    gap: 170px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}

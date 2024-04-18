@@ -1,0 +1,548 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: whitesmoke;
+  /*Navbar*/
+}
+body header .pre-header {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  height: 60px;
+  display: flex;
+  margin-top: 72px;
+}
+body header .pre-header .pre-header-horarios p {
+  font-size: 11px;
+  font-family: montserrat;
+  text-align: center;
+  padding-top: 6px;
+}
+body header .pre-header .pre-header-redes {
+  display: flex;
+  opacity: 0.6;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: -12px;
+}
+body header .pre-header .pre-header-redes a img {
+  height: 18px;
+}
+body header .pre-header .pre-header-redes a .img-logo-x {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+body header .pre-header .pre-header-redes a .img-logo-yt {
+  height: 21px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+body header .navbar-edit {
+  padding: 0;
+}
+body header .navbar-edit div {
+  background-color: rgb(71, 71, 71);
+  margin: 0;
+  padding: 10px;
+  text-align: right;
+}
+body header .navbar-edit div .navbar-logo-fitness {
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 0;
+  padding-top: 0;
+  border-bottom: 3px solid whitesmoke;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+  position: relative;
+  bottom: 3px;
+}
+body header .navbar-edit div .navbar-logo-fitness:hover {
+  color: linear-gradient(to right, rgb(255, 119, 51), rgb(184, 8, 19));
+  transition: all 1.2s ease;
+}
+body header .navbar-edit div a {
+  color: whitesmoke;
+  font-family: sans-serif;
+  margin-left: 15px;
+  font-size: 20px;
+}
+body header .navbar-edit div a:active {
+  color: tomato;
+}
+body header .navbar-edit div a:focus {
+  color: tomato;
+}
+body header .navbar-edit div a:hover {
+  color: tomato;
+}
+body header .navbar-edit div button {
+  display: none;
+  color: white;
+  background-color: gray;
+}
+body header .navbar-edit div button:focus {
+  border: none;
+  box-shadow: none;
+  background-color: tomato;
+}
+body header .navbar-edit div button:active {
+  border: none;
+  box-shadow: none;
+}
+body main {
+  background-color: whitesmoke;
+  /*Banner*/
+  /*Stories*/
+  /*Clases*/
+  /*Coaches*/
+  /*MEMBERSHIPS*/
+  /*REGISTRO*/
+}
+body main .carousel-edit div {
+  position: relative;
+}
+body main .carousel-edit div img {
+  width: 100%;
+  height: fit-content;
+}
+body main .carousel-edit div .texto-banner {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+body main .carousel-edit div .texto-banner .texto-banner-titulo {
+  font-size: 19px;
+  color: whitesmoke;
+  font-family: montserrat;
+  font-weight: 700;
+  border-left: 2px solid whitesmoke;
+  padding-left: 6px;
+}
+body main .carousel-edit div .texto-banner .texto-banner-descripcion {
+  font-size: 9px;
+  color: whitesmoke;
+  margin-top: -10px;
+}
+body main .carousel-edit div .texto-banner .texto-banner-boton {
+  font-size: 12px;
+  font-family: montserrat;
+  font-weight: 700;
+  padding: 6px 14px;
+  background: linear-gradient(to right, rgb(255, 119, 51), rgb(184, 8, 19));
+  border: none;
+  color: whitesmoke;
+  margin-top: 40px;
+}
+body main .carousel-edit div .texto-banner .texto-banner-boton:hover {
+  transform: translate(-2px, -2px);
+  transition: all 0.5s ease-in-out;
+}
+body main .carousel-edit div .texto-banner .texto-banner-boton:active {
+  transform: translate(2px, 2px);
+  transition: all 0.5s ease-in-out;
+}
+body main .stories .stories-grilla {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin: 60px 22px;
+}
+body main .stories .stories-grilla .stories-grilla-imagen img {
+  width: 100%;
+}
+body main .stories .stories-grilla .stories-grilla-texto .stories-texto-titulo {
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+}
+body main .stories .stories-grilla .stories-grilla-texto .stories-texto-descripcion {
+  text-align: justify;
+  font-family: montserrat;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 14px;
+}
+body main .stories .stories-grilla .stories-grilla-texto .stories-texto-boton {
+  text-align: center;
+}
+body main .stories .stories-grilla .stories-grilla-texto .stories-texto-boton button {
+  font-size: 12px;
+  font-family: montserrat;
+  font-weight: 700;
+  padding: 6px 14px;
+  background: linear-gradient(to right, rgb(255, 119, 51), rgb(184, 8, 19));
+  border: none;
+  color: whitesmoke;
+  margin-top: 12px;
+}
+body main .stories .stories-grilla .stories-grilla-texto .stories-texto-boton button:hover {
+  transform: translate(-2px, -2px);
+  transition: all 0.5s ease-in-out;
+}
+body main .stories .stories-grilla .stories-grilla-texto .stories-texto-boton button:active {
+  transform: translate(2px, 2px);
+  transition: all 0.5s ease-in-out;
+}
+body main .clases .clases-imagen img {
+  width: 100%;
+  height: 100%;
+}
+body main .clases .clases-tipos div {
+  background-color: rgb(72, 72, 72);
+  width: 100%;
+  margin: 0;
+  padding: 18px 34px;
+  padding-right: 0;
+  color: whitesmoke;
+}
+body main .clases .clases-tipos div img {
+  width: 60px;
+  padding-bottom: 18px;
+}
+body main .clases .clases-tipos div .clase-titulo {
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 16px;
+}
+body main .clases .clases-tipos div .clase-texto {
+  font-family: montserrat;
+  max-width: 250px;
+  margin-bottom: 4px;
+}
+body main .clases .clases-tipos .clase-dos, body main .clases .clases-tipos .clase-cuatro {
+  background-color: rgb(55, 55, 55);
+}
+body main .coaches {
+  background-color: tomato;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+body main .coaches .coaches-titulo p {
+  font-size: 36px;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 700;
+  font-family: montserrat;
+  padding-bottom: 10px;
+}
+body main .coaches .coaches-grilla {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 26px;
+}
+body main .coaches .coaches-grilla div {
+  display: grid;
+  grid-template-columns: auto;
+}
+body main .coaches .coaches-grilla div .coach-foto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+body main .coaches .coaches-grilla div .coach-foto img:hover {
+  margin: -5px;
+  width: 210px;
+  height: 210px;
+  border-radius: 150px;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+body main .coaches .coaches-grilla div .coach-nombre {
+  font-family: montserrat;
+  color: white;
+  font-size: 22px;
+  padding-top: 14px;
+  text-align: center;
+  font-weight: 700;
+}
+body main .coaches .coaches-grilla div .coach-profesion {
+  font-family: montserrat;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-top: -14px;
+}
+body main .memberships {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+body main .memberships .memberships-titulo p {
+  font-size: 36px;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  font-family: montserrat;
+  padding-bottom: 10px;
+}
+body main .memberships .memberships-grilla {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 30px;
+}
+body main .memberships .memberships-grilla div {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+}
+body main .memberships .memberships-grilla .memberships-tarjeta {
+  border: none;
+  box-shadow: 0 2px 12px rgba(106, 106, 106, 0.503);
+  width: 215px;
+}
+body main .memberships .memberships-grilla .memberships-tarjeta .memberships-tarjeta-titulo {
+  background: linear-gradient(to right, rgb(255, 119, 51), rgb(184, 8, 19));
+}
+body main .memberships .memberships-grilla .memberships-tarjeta .memberships-tarjeta-titulo p {
+  font-family: montserrat;
+  font-weight: 700;
+  color: white;
+  padding-top: 16px;
+  font-size: 22px;
+}
+body main .memberships .memberships-grilla .memberships-tarjeta .memberships-tarjeta-precio .tarjeta-precio-uno {
+  font-family: montserrat;
+  font-size: 46px;
+  color: tomato;
+  font-weight: 700;
+  padding-top: 6px;
+}
+body main .memberships .memberships-grilla .memberships-tarjeta .memberships-tarjeta-precio .tarjeta-precio-dos {
+  font-family: montserrat;
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: center;
+  margin-top: -24px;
+  margin-bottom: -14px;
+}
+body main .memberships .memberships-grilla .memberships-tarjeta .memberships-tarjeta-info p {
+  padding-top: 12px;
+  padding-bottom: 0;
+  padding-left: 30px;
+  margin-bottom: 0;
+  text-align: left;
+  font-family: montserrat;
+  font-size: 12px;
+  opacity: 0.9;
+}
+body main .memberships .memberships-grilla .memberships-tarjeta .memberships-tarjeta-boton button {
+  border: 3px solid tomato;
+  margin-top: 20px;
+  font-family: montserrat;
+  font-weight: 700;
+  padding: 10px 0;
+}
+body main .memberships .memberships-grilla .memberships-tarjeta .memberships-tarjeta-boton button:hover {
+  color: white;
+  background: linear-gradient(to right, rgb(255, 119, 51), rgb(184, 8, 19));
+  transition: all 0.25s ease-in-out;
+}
+body main .registro {
+  padding-bottom: 30px;
+}
+body main .registro .registro-grilla {
+  border: none;
+  box-shadow: 0 2px 12px rgba(106, 106, 106, 0.503);
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin: 60px 22px;
+  padding-bottom: 30px;
+}
+body main .registro .registro-grilla .registro-titulo p {
+  font-size: 36px;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  font-family: montserrat;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+body main .registro .registro-grilla .registro-formulario {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 10px;
+}
+body main .registro .registro-grilla .registro-formulario div p {
+  font-family: Montserrat;
+  opacity: 0.6;
+}
+body main .registro .registro-grilla .registro-formulario .formulario-boton {
+  text-align: center;
+}
+body main .registro .registro-grilla .registro-formulario .formulario-boton button {
+  font-size: 22px;
+  font-family: montserrat;
+  font-weight: 700;
+  padding: 6px 18px;
+  background: linear-gradient(to right, rgb(255, 119, 51), rgb(184, 8, 19));
+  border: none;
+  color: whitesmoke;
+  margin-top: 12px;
+}
+body main .registro .registro-imagen {
+  display: flex;
+  justify-content: center;
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-top: -36px;
+}
+body main .registro .registro-imagen img {
+  width: 100%;
+}
+body footer {
+  background-color: rgb(55, 55, 55);
+  padding-top: 30px;
+  /*Info contacto*/
+  /*Links*/
+  /*Firma*/
+}
+body footer .footer-info-contacto {
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: 22px;
+}
+body footer .footer-info-contacto .footer-info-contacto-titulo p {
+  color: tomato;
+  font-family: Montserrat;
+  font-size: 20px;
+}
+body footer .footer-info-contacto .footer-info-contacto-texto p {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: white;
+}
+body footer .logos-link {
+  padding: 60px;
+  display: flex;
+  gap: 14px;
+  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
+}
+body footer .logos-link a {
+  align-items: center;
+}
+body footer .logos-link a .logo-ig {
+  width: 20px;
+  height: 20px;
+}
+body footer .logos-link a .logo-yt {
+  margin-top: 1px;
+  width: 25px;
+}
+body footer .logos-link a .logo-tiktok {
+  width: 18px;
+}
+body footer .logos-link a .logo-sound {
+  height: 42px;
+  width: 42px;
+  margin-left: -9px;
+}
+body footer .logos-link a .logo-band {
+  height: 42px;
+  width: 42px;
+  margin-left: -8px;
+}
+body footer .firma {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 12px;
+  color: white;
+}
+body footer .firma a {
+  text-decoration: none;
+  color: white;
+}
+body footer .firma a .firma-nombre {
+  font-weight: 700;
+}
+body footer .firma a .firma-nombre:hover {
+  color: tomato;
+}
+
+/*Media query tablet*/
+@media screen and (min-width: 720px) {
+  body main {
+    justify-content: center;
+  }
+  body main .clases {
+    display: grid;
+    grid-template-columns: 600px auto;
+  }
+  body main .clases .clases-tipos {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  body main .coaches .coaches-grilla {
+    grid-template-columns: auto auto auto;
+  }
+  body main .memberships .memberships-grilla {
+    grid-template-columns: auto auto auto;
+    gap: 80px;
+  }
+  body main .banda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .banda .descripcion-banda {
+    max-width: 720px;
+  }
+  body main .band-mates {
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body main .contacto .caja-contacto {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+}
+/*Media query desktop*/
+@media screen and (min-width: 1024px) {
+  body main .banda .descripcion-banda {
+    max-width: 800px;
+  }
+  body main .band-mates {
+    width: 800px;
+  }
+  body main .tour .bloque-tour {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 70px;
+    align-items: center;
+    margin-top: 40px;
+  }
+  body main .tour .bloque-tour .second-card {
+    margin-top: 0;
+  }
+  body main .contacto .caja-contacto {
+    margin-top: 40px;
+    gap: 170px;
+    padding-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
